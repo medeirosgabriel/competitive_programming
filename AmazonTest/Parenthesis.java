@@ -7,17 +7,11 @@ public class Parenthesis {
 		int logic_count = 0;
 
 		for (int i = 0; i < sequence.length(); i++) {
-			if (sequence.charAt(i) == '(') {		
-				logic_count ++;
-			} else {
-				logic_count --;
-			}
+			logic_count += (sequence.charAt(i) == '(') ? 1 : -1;
 		}
 		
-		if (logic_count == 0) {
-			System.out.println("Right");
-		} else {
-			System.out.println("Wrong");
-		}
+		String result = (logic_count == 0) ? "Right" : "Wrong";
+
+		System.out.println(result);
 	}
 }
