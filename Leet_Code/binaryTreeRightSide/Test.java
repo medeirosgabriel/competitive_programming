@@ -16,6 +16,6 @@ public class Test {
                 TreeNode n1 = new TreeNode(80, null, n2);
 		TreeNode root = new TreeNode(120, n1, n3);
 
-		System.out.println(Solution.maxSumBST(root));		
+		System.out.println(Solution.rightSideView(root));		
 	}
 }
