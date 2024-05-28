@@ -29,7 +29,6 @@ class Solution(object):
                 self.result.append(currList)
             elif (length == self.min_):
                 self.result.append(currList)
-
     
     def findLadders(self, beginWord, endWord, wordList):
         """
