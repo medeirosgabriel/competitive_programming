@@ -7,9 +7,9 @@ class Solution(object):
         n = len(s)
         dp = [[0 for _ in range(n)] for _ in range(n)]
 
-        for l in range(n - 1, -1, -1):
+        for l in range(n - 1, -1, -1): # Start of string
             dp[l][l] = 1
-            for r in range(l + 1, n):
+            for r in range(l + 1, n): # End of string
                 if (s[l] == s[r]):
                     dp[l][r] = dp[l + 1][r - 1] + 2
                 else:
